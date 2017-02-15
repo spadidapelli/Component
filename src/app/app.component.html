@@ -1,3 +1,27 @@
-<h1>
-  {{title}}
-</h1>
+
+<div>
+  <!-- <header>
+    <h1>Storyline Tracker</h1>
+    <h3>Router Demo</h3>
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/radiobuttons']" href="">radiobuttons</a></li>
+        <li><a [routerLink]="['/alert']" href="">alert</a></li>
+        
+      </ul>
+    </nav>
+  </header> -->
+  <div class="left-nav">
+  <ul>
+        <li><a [routerLink]="['/radiobuttons']" href="">Radiobuttons</a></li>
+        <li><a [routerLink]="['/select']" href="">select</a></li>
+        
+      </ul>
+
+  </div>
+<div class="right-container">
+      <router-outlet></router-outlet>
+</div>
+
+
+</div>

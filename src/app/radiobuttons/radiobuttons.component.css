@@ -1,0 +1,161 @@
+body {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    margin-top: 0 !important;
+}
+.form,form {
+    padding-top: 12px
+}
+
+.form label,.form span,form label,form span {
+    display: inline-block
+}
+
+.form .form-block,form .form-block {
+    margin: 12px 0 36px
+}
+
+.form .form-block>label,form .form-block>label {
+    font-size: 16px;
+    letter-spacing: .01em;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 6px
+}
+
+.form .form-group,form .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 228px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    letter-spacing: normal;
+    line-height: 24px
+}
+
+.form .form-group.row,form .form-group.row {
+    padding-left: 0
+}
+
+.form .form-group>label:first-child,.form .form-group>span:first-child,form .form-group>label:first-child,form .form-group>span:first-child {
+    position: absolute;
+    width: 204px;
+    left: 0;
+    top: 6px;
+    margin: 0
+}
+
+.form .form-group.row>[class*=col-]:first-child>label,.form .form-group.row>[class*=col-]:first-child>span,form .form-group.row>[class*=col-]:first-child>label,form .form-group.row>[class*=col-]:first-child>span {
+    position: relative
+}
+
+.form .form-group.row>[class*=col-]:first-child>label,.form .form-group.row>[class*=col-]:first-child>span,.form .form-group>label:first-child,.form .form-group>span:first-child,form .form-group.row>[class*=col-]:first-child>label,form .form-group.row>[class*=col-]:first-child>span,form .form-group>label:first-child,form .form-group>span:first-child {
+    color: #000
+}
+
+.form .form-group.row>[class*=col-]:first-child>label.required:after,.form .form-group.row>[class*=col-]:first-child>span.required:after,.form .form-group>label:first-child.required:after,.form .form-group>span:first-child.required:after,form .form-group.row>[class*=col-]:first-child>label.required:after,form .form-group.row>[class*=col-]:first-child>span.required:after,form .form-group>label:first-child.required:after,form .form-group>span:first-child.required:after {
+    content: "*";
+    font-size: 1.1em;
+    color: #c92100;
+    margin-left: 6px
+}
+
+.form .form-group .form-control,form .form-group .form-control {
+    width: 100%
+}
+
+.form .form-group>.btn,.form .form-group>.checkbox-inline,.form .form-group>.radio-inline,.form .form-group>.select,.form .form-group>.tooltip-validation,.form .form-group>a,.form .form-group>button,.form .form-group>input[type=button],.form .form-group>input[type=text],.form .form-group>label:not(:first-child),.form .form-group>span:not(:first-child),.form .form-group input[type=date],.form .form-group input[type=email],.form .form-group input[type=number],.form .form-group input[type=password],.form .form-group input[type=submit],.form .form-group input[type=tel],.form .form-group input[type=url],form .form-group>.btn,form .form-group>.checkbox-inline,form .form-group>.radio-inline,form .form-group>.select,form .form-group>.tooltip-validation,form .form-group>a,form .form-group>button,form .form-group>input[type=button],form .form-group>input[type=text],form .form-group>label:not(:first-child),form .form-group>span:not(:first-child),form .form-group input[type=date],form .form-group input[type=email],form .form-group input[type=number],form .form-group input[type=password],form .form-group input[type=submit],form .form-group input[type=tel],form .form-group input[type=url] {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin-left: 0;
+    margin-right: 12px
+}
+
+.form .form-group>.btn.btn-link,form .form-group>.btn.btn-link {
+    margin-right: 0
+}
+
+.form .form-group>.checkbox,.form .form-group>.radio,form .form-group>.checkbox,form .form-group>.radio {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-right: 24px
+}
+
+.form .form-group>.toggle-switch,form .form-group>.toggle-switch {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin-left: 0;
+    margin-right: 24px
+}
+
+.form .form-group>textarea,form .form-group>textarea {
+    margin-left: 0;
+    margin-right: 12px
+}
+
+.form .form-group .btn,.form .form-group .checkbox,.form .form-group .checkbox-inline,.form .form-group .radio,.form .form-group .radio-inline,.form .form-group .select,.form .form-group .toggle-switch,.form .form-group .tooltip-validation,.form .form-group a,.form .form-group button,.form .form-group input[type=button],.form .form-group input[type=date],.form .form-group input[type=email],.form .form-group input[type=number],.form .form-group input[type=password],.form .form-group input[type=submit],.form .form-group input[type=tel],.form .form-group input[type=text],.form .form-group input[type=url],.form .form-group label,.form .form-group span,.form .form-group textarea,form .form-group .btn,form .form-group .checkbox,form .form-group .checkbox-inline,form .form-group .radio,form .form-group .radio-inline,form .form-group .select,form .form-group .toggle-switch,form .form-group .tooltip-validation,form .form-group a,form .form-group button,form .form-group input[type=button],form .form-group input[type=date],form .form-group input[type=email],form .form-group input[type=number],form .form-group input[type=password],form .form-group input[type=submit],form .form-group input[type=tel],form .form-group input[type=text],form .form-group input[type=url],form .form-group label,form .form-group span,form .form-group textarea {
+    margin-top: 6px;
+    margin-bottom: 6px
+}
+
+.alert.alert-app-level .alert-item .form .form-group .btn,.alert.alert-app-level .alert-item form .form-group .btn,.form .form-group .alert.alert-app-level .alert-item .btn,.form .form-group .btn-sm,form .form-group .alert.alert-app-level .alert-item .btn,form .form-group .btn-sm {
+    margin-top: 12px;
+    margin-bottom: 12px
+}
+
+.form .form-group .tooltip-validation,form .form-group .tooltip-validation {
+    height: 24px
+}
+
+.form .form-group .tooltip-validation input,form .form-group .tooltip-validation input {
+    margin: 0
+}
+
+.form .form-group .checkbox-inline label,.form .form-group .checkbox label,.form .form-group .radio-inline label,.form .form-group .radio label,.form .form-group .toggle-switch label,form .form-group .checkbox-inline label,form .form-group .checkbox label,form .form-group .radio-inline label,form .form-group .radio label,form .form-group .toggle-switch label {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+@media screen and (max-width: 544px) {
+    .form .form-group,form .form-group {
+        padding-left:0;
+        margin-bottom: 24px
+    }
+
+    .form .form-group .checkbox,.form .form-group .checkbox-inline,.form .form-group .radio,.form .form-group .radio-inline,.form .form-group .select,.form .form-group .toggle-switch,.form .form-group .tooltip-validation,.form .form-group>label:first-child,.form .form-group>label:not(:first-child),.form .form-group input[type=date],.form .form-group input[type=email],.form .form-group input[type=number],.form .form-group input[type=password],.form .form-group input[type=tel],.form .form-group input[type=text],.form .form-group input[type=url],form .form-group .checkbox,form .form-group .checkbox-inline,form .form-group .radio,form .form-group .radio-inline,form .form-group .select,form .form-group .toggle-switch,form .form-group .tooltip-validation,form .form-group>label:first-child,form .form-group>label:not(:first-child),form .form-group input[type=date],form .form-group input[type=email],form .form-group input[type=number],form .form-group input[type=password],form .form-group input[type=tel],form .form-group input[type=text],form .form-group input[type=url] {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%
+    }
+
+    .form .form-group>label:first-child,form .form-group>label:first-child {
+        position: relative;
+        margin: 0 0 12px
+    }
+
+    .form .form-group>label:not(:first-child),.form .form-group span,form .form-group>label:not(:first-child),form .form-group span {
+        margin: 12px 12px 0 0
+    }
+
+    .form .form-group input[type=date],.form .form-group input[type=email],.form .form-group input[type=number],.form .form-group input[type=password],.form .form-group input[type=tel],.form .form-group input[type=text],.form .form-group input[type=url],form .form-group input[type=date],form .form-group input[type=email],form .form-group input[type=number],form .form-group input[type=password],form .form-group input[type=tel],form .form-group input[type=text],form .form-group input[type=url] {
+        padding: 0 12px
+    }
+
+    .form .form-group .tooltip-validation input,form .form-group .tooltip-validation input {
+        margin: 0;
+        width: 100%
+    }
+}

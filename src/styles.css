@@ -1,1 +1,708 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+}
+ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    
+}
+ul li a{
+	text-decoration: none;
+}
+.header {
+    background-color: #002538;
+    height: 60px;
+}
+.header span{
+    padding: 16px 24px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+}
+.left-nav{
+	line-height: 24px;
+    max-width: 312px;
+    min-width: 216px;
+    width: 18%;
+    border-right: 1px solid #ccc;
+    float: left;
+    min-height: 600px; 
+}
+.right-container {
+    float: left;
+    width: 76%;
+    padding: 24px 24px 24px 24px;
+}
+.left-nav ul {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.left-nav ul li a {
+	display: inline-block;
+    border-radius: 3px 0 0 3px;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+body {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    margin-top: 0 !important;
+}
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date], .select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    height: 24px;
+}
+.select select {
+    background: -webkit-linear-gradient(top, transparent 95%, #0094d2 95%);
+    background: linear-gradient(to bottom, transparent 95%, #0094d2 95%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transition: background-size 0.2s ease;
+    transition: background-size 0.2s ease;
+    position: relative;
+    padding: 0 22px 0 6px;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+}
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date], .select select {
+    display: inline-block;
+    border-bottom: 1px solid #9a9a9a;
+    min-width: 60px;
+}
+
+.select::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    top: 7px;
+    right: 6px;
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org…%2C9.84%2C3.24a0.68%2C0.68%2C0%2C1%2C1%2C1%2C1Z%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* line 302, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.select {
+  position: relative;
+  height: 24px; }
+  /* line 309, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select select {
+    background: -webkit-linear-gradient(top, transparent 95%, #0094d2 95%);
+    background: linear-gradient(to bottom, transparent 95%, #0094d2 95%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transition: background-size 0.2s ease;
+    transition: background-size 0.2s ease;
+    position: relative;
+    padding: 0 22px 0 6px;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2; }
+    /* line 31, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    .select select:focus {
+      border-bottom: 1px solid #0094d2;
+      background-size: 100% 100%; }
+    /* line 322, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    .select select:hover, .select select:active {
+      border-color: rgba(221, 221, 221, 0.5);
+      background: rgba(221, 221, 221, 0.5); }
+  /* line 334, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select select::-ms-expand {
+    display: none; }
+  /* line 339, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    top: 7px;
+    right: 6px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E.cls-1%7Bfill%3A%239a9a9a%3B%7D%3C%2Fstyle%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Ctitle%3ECaret%3C%2Ftitle%3E%0A%20%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22M6%2C9L1.2%2C4.2a0.68%2C0.68%2C0%2C0%2C1%2C1-1L6%2C7.08%2C9.84%2C3.24a0.68%2C0.68%2C0%2C1%2C1%2C1%2C1Z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0; }
+  /* line 351, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select:hover::after {
+    color: #747474; }
+  /* line 358, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select.disabled:hover::after {
+    color: #9a9a9a; }
+  /* line 366, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select.disabled > select:hover, .select select:disabled:hover {
+    background: none;
+    border-color: #9a9a9a; }
+
+
+
+
+
+    /* line 71, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date], .select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  height: 24px; }
+  /* line 81, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=date]:focus, .select select:focus {
+    outline: 0; }
+
+/* line 86, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date], .select select {
+  display: inline-block;
+  border-bottom: 1px solid #9a9a9a;
+  min-width: 60px; }
+
+/* line 92, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 4px;
+  left: 0;
+  opacity: 0; }
+
+/* line 101, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.checkbox label, .checkbox-inline label, .radio label, .radio-inline label {
+  display: inline-block;
+  min-height: 24px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 22px; }
+
+/* line 109, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.checkbox input[type="checkbox"] + label::before, .checkbox-inline input[type="checkbox"] + label::before, .radio input[type="radio"] + label::before, .radio-inline input[type="radio"] + label::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 4px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #9a9a9a; }
+
+/* line 120, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+input[type=text]:disabled, input[type=password]:disabled, input[type=number]:disabled, input[type=email]:disabled, input[type=url]:disabled, input[type=tel]:disabled, input[type=date]:disabled,
+input[type=button]:disabled, input[type=submit]:disabled,
+textarea:disabled, .select select:disabled, .select.disabled, .select.disabled > select, .checkbox.disabled label, .checkbox-inline.disabled label, .radio.disabled label, .radio-inline.disabled label {
+  opacity: 0.5;
+  cursor: not-allowed; }
+
+/* line 128, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+form, .form {
+  padding-top: 12px; }
+  /* line 131, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  form label, form span, .form label, .form span {
+    display: inline-block; }
+  /* line 135, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  form .form-block, .form .form-block {
+    margin: 12px 0 36px 0; }
+    /* line 137, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-block > label, .form .form-block > label {
+      font-size: 16px;
+      letter-spacing: 0.01em;
+      font-weight: 400;
+      color: #000;
+      margin-bottom: 6px; }
+  /* line 145, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  form .form-group, .form .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 228px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    letter-spacing: normal;
+    line-height: 24px; }
+    /* line 153, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group.row, .form .form-group.row {
+      padding-left: 0; }
+    /* line 159, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > label:first-child, form .form-group > span:first-child, .form .form-group > label:first-child, .form .form-group > span:first-child {
+      position: absolute;
+      width: 204px;
+      left: 0;
+      top: 6px;
+      margin: 0; }
+    /* line 167, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group.row > [class*='col-']:first-child > label,
+    form .form-group.row > [class*='col-']:first-child > span, .form .form-group.row > [class*='col-']:first-child > label,
+    .form .form-group.row > [class*='col-']:first-child > span {
+      position: relative; }
+    /* line 172, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > label:first-child,
+    form .form-group > span:first-child,
+    form .form-group.row > [class*='col-']:first-child > label,
+    form .form-group.row > [class*='col-']:first-child > span, .form .form-group > label:first-child,
+    .form .form-group > span:first-child,
+    .form .form-group.row > [class*='col-']:first-child > label,
+    .form .form-group.row > [class*='col-']:first-child > span {
+      color: #000; }
+      /* line 60, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group > label:first-child.required:after,
+      form .form-group > span:first-child.required:after,
+      form .form-group.row > [class*='col-']:first-child > label.required:after,
+      form .form-group.row > [class*='col-']:first-child > span.required:after, .form .form-group > label:first-child.required:after,
+      .form .form-group > span:first-child.required:after,
+      .form .form-group.row > [class*='col-']:first-child > label.required:after,
+      .form .form-group.row > [class*='col-']:first-child > span.required:after {
+        content: '*';
+        font-size: 1.1em;
+        color: #c92100;
+        margin-left: 6px; }
+    /* line 181, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group .form-control, .form .form-group .form-control {
+      width: 100%; }
+    /* line 186, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > label:not(:first-child),
+    form .form-group > span:not(:first-child),
+    form .form-group > input[type=text], form .form-group input[type=password], form .form-group input[type=number], form .form-group input[type=email], form .form-group input[type=url], form .form-group input[type=tel], form .form-group input[type=date],
+    form .form-group > .tooltip-validation,
+    form .form-group > .select,
+    form .form-group > .checkbox-inline,
+    form .form-group > .radio-inline,
+    form .form-group > button,
+    form .form-group > a,
+    form .form-group > input[type=button], form .form-group input[type=submit],
+    form .form-group > .btn, .form .form-group > label:not(:first-child),
+    .form .form-group > span:not(:first-child),
+    .form .form-group > input[type=text], .form .form-group input[type=password], .form .form-group input[type=number], .form .form-group input[type=email], .form .form-group input[type=url], .form .form-group input[type=tel], .form .form-group input[type=date],
+    .form .form-group > .tooltip-validation,
+    .form .form-group > .select,
+    .form .form-group > .checkbox-inline,
+    .form .form-group > .radio-inline,
+    .form .form-group > button,
+    .form .form-group > a,
+    .form .form-group > input[type=button], .form .form-group input[type=submit],
+    .form .form-group > .btn {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      margin-left: 0;
+      margin-right: 12px; }
+    /* line 193, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > .btn.btn-link, .form .form-group > .btn.btn-link {
+      margin-right: 0; }
+    /* line 197, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > .checkbox,
+    form .form-group > .radio, .form .form-group > .checkbox,
+    .form .form-group > .radio {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-right: 24px; }
+    /* line 204, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > .toggle-switch, .form .form-group > .toggle-switch {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      margin-left: 0;
+      margin-right: 24px; }
+    /* line 210, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group > textarea, .form .form-group > textarea {
+      margin-left: 0;
+      margin-right: 12px; }
+    /* line 217, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group label,
+    form .form-group span,
+    form .form-group input[type=text], form .form-group input[type=password], form .form-group input[type=number], form .form-group input[type=email], form .form-group input[type=url], form .form-group input[type=tel], form .form-group input[type=date],
+    form .form-group .tooltip-validation,
+    form .form-group textarea,
+    form .form-group .select,
+    form .form-group .checkbox-inline,
+    form .form-group .radio-inline,
+    form .form-group .checkbox,
+    form .form-group .radio,
+    form .form-group .toggle-switch,
+    form .form-group button,
+    form .form-group a,
+    form .form-group input[type=button], form .form-group input[type=submit],
+    form .form-group .btn, .form .form-group label,
+    .form .form-group span,
+    .form .form-group input[type=text], .form .form-group input[type=password], .form .form-group input[type=number], .form .form-group input[type=email], .form .form-group input[type=url], .form .form-group input[type=tel], .form .form-group input[type=date],
+    .form .form-group .tooltip-validation,
+    .form .form-group textarea,
+    .form .form-group .select,
+    .form .form-group .checkbox-inline,
+    .form .form-group .radio-inline,
+    .form .form-group .checkbox,
+    .form .form-group .radio,
+    .form .form-group .toggle-switch,
+    .form .form-group button,
+    .form .form-group a,
+    .form .form-group input[type=button], .form .form-group input[type=submit],
+    .form .form-group .btn {
+      margin-top: 6px;
+      margin-bottom: 6px; }
+    /* line 222, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group .btn-sm, form .form-group .alert.alert-app-level .alert-item .btn, .alert.alert-app-level .alert-item form .form-group .btn, .form .form-group .btn-sm, .form .form-group .alert.alert-app-level .alert-item .btn, .alert.alert-app-level .alert-item .form .form-group .btn {
+      margin-top: 12px;
+      margin-bottom: 12px; }
+    /* line 227, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group .tooltip-validation, .form .form-group .tooltip-validation {
+      height: 24px; }
+      /* line 229, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group .tooltip-validation input, .form .form-group .tooltip-validation input {
+        margin: 0; }
+    /* line 235, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group .radio label, form .form-group .checkbox label, form .form-group .radio-inline label, form .form-group .checkbox-inline label, form .form-group .toggle-switch label, .form .form-group .radio label, .form .form-group .checkbox label, .form .form-group .radio-inline label, .form .form-group .checkbox-inline label, .form .form-group .toggle-switch label {
+      margin-top: 0;
+      margin-bottom: 0; }
+  @media screen and (max-width: 544px) {
+    /* line 245, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    form .form-group, .form .form-group {
+      padding-left: 0;
+      margin-bottom: 24px; }
+      /* line 249, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group > label:first-child,
+      form .form-group > label:not(:first-child),
+      form .form-group input[type=text], form .form-group input[type=password], form .form-group input[type=number], form .form-group input[type=email], form .form-group input[type=url], form .form-group input[type=tel], form .form-group input[type=date],
+      form .form-group .tooltip-validation,
+      form .form-group .select,
+      form .form-group .toggle-switch,
+      form .form-group .checkbox,
+      form .form-group .radio,
+      form .form-group .checkbox-inline,
+      form .form-group .radio-inline, .form .form-group > label:first-child,
+      .form .form-group > label:not(:first-child),
+      .form .form-group input[type=text], .form .form-group input[type=password], .form .form-group input[type=number], .form .form-group input[type=email], .form .form-group input[type=url], .form .form-group input[type=tel], .form .form-group input[type=date],
+      .form .form-group .tooltip-validation,
+      .form .form-group .select,
+      .form .form-group .toggle-switch,
+      .form .form-group .checkbox,
+      .form .form-group .radio,
+      .form .form-group .checkbox-inline,
+      .form .form-group .radio-inline {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%; }
+      /* line 253, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group > label:first-child, .form .form-group > label:first-child {
+        position: relative;
+        margin: 0 0 12px 0; }
+      /* line 258, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group > label:not(:first-child),
+      form .form-group span, .form .form-group > label:not(:first-child),
+      .form .form-group span {
+        margin: 12px 12px 0 0; }
+      /* line 263, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group input[type=text], form .form-group input[type=password], form .form-group input[type=number], form .form-group input[type=email], form .form-group input[type=url], form .form-group input[type=tel], form .form-group input[type=date], .form .form-group input[type=text], .form .form-group input[type=password], .form .form-group input[type=number], .form .form-group input[type=email], .form .form-group input[type=url], .form .form-group input[type=tel], .form .form-group input[type=date] {
+        padding: 0 12px; }
+      /* line 268, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+      form .form-group .tooltip-validation input, .form .form-group .tooltip-validation input {
+        margin: 0;
+        width: 100%; } }
+
+/* line 277, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date] {
+  background: -webkit-linear-gradient(top, transparent 95%, #0094d2 95%);
+  background: linear-gradient(to bottom, transparent 95%, #0094d2 95%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.2s ease;
+  transition: background-size 0.2s ease;
+  padding: 0 6px; }
+  /* line 31, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=date]:focus {
+    border-bottom: 1px solid #0094d2;
+    background-size: 100% 100%; }
+
+/* line 290, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+textarea {
+  resize: vertical;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 12px 6px; }
+  /* line 297, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 2px #6bc1e3; }
+
+/* line 302, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.select {
+  position: relative;
+  height: 24px; }
+  /* line 309, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select select {
+    background: -webkit-linear-gradient(top, transparent 95%, #0094d2 95%);
+    background: linear-gradient(to bottom, transparent 95%, #0094d2 95%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transition: background-size 0.2s ease;
+    transition: background-size 0.2s ease;
+    position: relative;
+    padding: 0 22px 0 6px;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2; }
+    /* line 31, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    .select select:focus {
+      border-bottom: 1px solid #0094d2;
+      background-size: 100% 100%; }
+    /* line 322, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+    .select select:hover, .select select:active {
+      border-color: rgba(221, 221, 221, 0.5);
+      background: rgba(221, 221, 221, 0.5); }
+  /* line 334, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select select::-ms-expand {
+    display: none; }
+  /* line 339, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    top: 7px;
+    right: 6px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E.cls-1%7Bfill%3A%239a9a9a%3B%7D%3C%2Fstyle%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Ctitle%3ECaret%3C%2Ftitle%3E%0A%20%20%20%20%3Cpath%20class%3D%22cls-1%22%20d%3D%22M6%2C9L1.2%2C4.2a0.68%2C0.68%2C0%2C0%2C1%2C1-1L6%2C7.08%2C9.84%2C3.24a0.68%2C0.68%2C0%2C1%2C1%2C1%2C1Z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0; }
+  /* line 351, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select:hover::after {
+    color: #747474; }
+  /* line 358, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select.disabled:hover::after {
+    color: #9a9a9a; }
+  /* line 366, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .select.disabled > select:hover, .select select:disabled:hover {
+    background: none;
+    border-color: #9a9a9a; }
+
+/* line 373, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.checkbox, .checkbox-inline {
+  position: relative; }
+  /* line 387, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"] + label::before, .checkbox-inline input[type="checkbox"] + label::before {
+    border-radius: 3px; }
+  /* line 392, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"]:focus + label::before, .checkbox-inline input[type="checkbox"]:focus + label::before {
+    outline: 0;
+    box-shadow: 0 0 2px 2px #6bc1e3; }
+  /* line 397, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"] + label::after, .checkbox-inline input[type="checkbox"] + label::after {
+    position: absolute;
+    content: '';
+    display: none;
+    height: 5px;
+    width: 8px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 4px;
+    left: 4px;
+    -webkit-transform: translate(0, 4px) rotate(-45deg);
+    -ms-transform: translate(0, 4px) rotate(-45deg);
+    transform: translate(0, 4px) rotate(-45deg); }
+  /* line 410, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"]:checked + label::before, .checkbox-inline input[type="checkbox"]:checked + label::before {
+    background: #0094d2;
+    border: none; }
+  /* line 415, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"]:checked + label::after, .checkbox-inline input[type="checkbox"]:checked + label::after {
+    display: inline-block; }
+  /* line 419, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"]:indeterminate + label::before, .checkbox-inline input[type="checkbox"]:indeterminate + label::before {
+    border: 1px solid #0094d2; }
+  /* line 422, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox-inline input[type="checkbox"]:indeterminate + label::after {
+    border-left: none;
+    border-bottom-color: #0094d2;
+    display: inline-block;
+    -webkit-transform: translate(0, 4px);
+    -ms-transform: translate(0, 4px);
+    transform: translate(0, 4px); }
+  /* line 434, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox.disabled input[type="checkbox"]:checked + label::before, .checkbox-inline.disabled input[type="checkbox"]:checked + label::before {
+    background-color: #ccc; }
+  /* line 438, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .checkbox.disabled input[type="checkbox"]:checked + label::after, .checkbox-inline.disabled input[type="checkbox"]:checked + label::after {
+    border-left: 2px solid #747474;
+    border-bottom: 2px solid #747474; }
+
+/* line 446, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.radio, .radio-inline {
+  position: relative; }
+  /* line 459, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .radio input[type="radio"] + label::before, .radio-inline input[type="radio"] + label::before {
+    border-radius: 50%; }
+  /* line 465, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .radio input[type="radio"]:checked + label::before, .radio-inline input[type="radio"]:checked + label::before {
+    box-shadow: inset 0 0 0 6px #0094d2;
+    border: none; }
+  /* line 471, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .radio input[type="radio"]:focus + label::before, .radio-inline input[type="radio"]:focus + label::before {
+    outline: 0;
+    box-shadow: 0 0 2px 2px #6bc1e3; }
+  /* line 477, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .radio input[type="radio"]:focus:checked + label::before, .radio-inline input[type="radio"]:focus:checked + label::before {
+    outline: 0;
+    box-shadow: inset 0 0 0 6px #0094d2, 0 0 2px 2px #6bc1e3; }
+  /* line 488, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .radio.disabled input[type="radio"]:checked + label::before, .radio-inline.disabled input[type="radio"]:checked + label::before {
+    background-color: #ccc;
+    box-shadow: inset 0 0 0 6px #747474; }
+
+/* line 496, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.toggle-switch label {
+  margin-bottom: 0; }
+
+/* line 507, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation > input {
+  padding-right: 28px; }
+
+/* line 514, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation:hover > .tooltip-content {
+  visibility: hidden;
+  opacity: 0; }
+
+/* line 520, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid > input {
+  border-bottom: 1px solid #c92100;
+  background: -webkit-linear-gradient(top, transparent 95%, #c92100 95%);
+  background: linear-gradient(to bottom, transparent 95%, #c92100 95%);
+  -webkit-transition: none;
+  transition: none; }
+
+/* line 529, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid > input:focus + .tooltip-content {
+  background: #c92100;
+  visibility: visible;
+  opacity: 1; }
+
+/* line 537, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid > input:focus + .tooltip-content,
+.tooltip.tooltip-validation.invalid.tooltip-top-right > input:focus + .tooltip-content,
+.tooltip.tooltip-validation.invalid.tooltip-bottom-right > input:focus + .tooltip-content {
+  left: 100%;
+  right: auto;
+  margin-left: -14px; }
+
+/* line 546, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid.tooltip-top-left > input:focus + .tooltip-content,
+.tooltip.tooltip-validation.invalid.tooltip-bottom-left > input:focus + .tooltip-content {
+  right: 0;
+  left: auto;
+  margin-right: 14px; }
+
+/* line 555, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid > .tooltip-content::before, .tooltip.tooltip-validation.invalid.tooltip-top-right > .tooltip-content::before {
+  border-left-color: #c92100;
+  border-top-color: #c92100;
+  border-right-color: transparent;
+  border-bottom-color: transparent; }
+
+/* line 559, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid.tooltip-top-left > .tooltip-content::before {
+  border-right-color: #c92100;
+  border-top-color: #c92100;
+  border-left-color: transparent;
+  border-bottom-color: transparent; }
+
+/* line 563, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid.tooltip-bottom-right > .tooltip-content::before {
+  border-left-color: #c92100;
+  border-bottom-color: #c92100;
+  border-right-color: transparent;
+  border-top-color: transparent; }
+
+/* line 567, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid.tooltip-bottom-left > .tooltip-content::before {
+  border-right-color: #c92100;
+  border-bottom-color: #c92100;
+  border-left-color: transparent;
+  border-top-color: transparent; }
+
+/* line 571, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid.tooltip-left > input:focus + .tooltip-content {
+  right: 100%;
+  left: auto;
+  margin: 0 14px 0 0; }
+  /* line 576, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .tooltip.tooltip-validation.invalid.tooltip-left > input:focus + .tooltip-content::before {
+    border-top-color: #c92100;
+    border-left-color: #c92100;
+    border-bottom-color: transparent;
+    border-right-color: transparent; }
+
+/* line 581, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid.tooltip-right > input:focus + .tooltip-content {
+  left: 100%;
+  right: auto;
+  margin: 0 0 0 14px; }
+  /* line 586, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  .tooltip.tooltip-validation.invalid.tooltip-right > input:focus + .tooltip-content::before {
+    border-top-color: #c92100;
+    border-right-color: #c92100;
+    border-bottom-color: transparent;
+    border-left-color: transparent; }
+
+/* line 592, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+.tooltip.tooltip-validation.invalid::before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  top: 3px;
+  right: 6px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%27Layer_1%27%20data-name%3D%27Layer%201%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23a32100%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Eic_error_red_16x%3C%2Ftitle%3E%3Cpath%20class%3D%27cls-1%27%20d%3D%27M8%2C1.3A6.7%2C6.7%2C0%2C1%2C1%2C1.3%2C8%2C6.71%2C6.71%2C0%2C0%2C1%2C8%2C1.3M8%2C0a8%2C8%2C0%2C1%2C0%2C8%2C8A8%2C8%2C0%2C0%2C0%2C8%2C0H8Z%27%2F%3E%3Crect%20class%3D%27cls-1%27%20x%3D%277%27%20y%3D%2710%27%20width%3D%272%27%20height%3D%272%27%2F%3E%3Crect%20class%3D%27cls-1%27%20x%3D%277%27%20y%3D%2710%27%20width%3D%272%27%20height%3D%272%27%2F%3E%3Crect%20class%3D%27cls-1%27%20x%3D%277%27%20y%3D%273%27%20width%3D%272%27%20height%3D%276%27%2F%3E%3Crect%20class%3D%27cls-1%27%20x%3D%277%27%20y%3D%273%27%20width%3D%272%27%20height%3D%276%27%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0; }
+
+/* line 608, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+form.compact .form-block, .form.compact .form-block {
+  margin: 12px 0 24px 0; }
+  /* line 610, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  form.compact .form-block > label, .form.compact .form-block > label {
+    margin-bottom: 0; }
+
+/* line 615, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+form.compact .form-group, .form.compact .form-group {
+  margin-bottom: 0; }
+
+/* line 622, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+_:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=password], _:-ms-input-placeholder input[type=number], _:-ms-input-placeholder input[type=email], _:-ms-input-placeholder input[type=url], _:-ms-input-placeholder input[type=tel], _:-ms-input-placeholder input[type=date], :root input[type=text], :root input[type=password], :root input[type=number], :root input[type=email], :root input[type=url], :root input[type=tel], :root input[type=date] {
+  padding-bottom: 3px; }
+
+@supports (-ms-ime-align: auto) {
+  /* line 629, /Users/padidapellis/Downloads/clarity-master/src/clarity-angular/forms/_forms.clarity.scss */
+  input[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date] {
+    padding-bottom: 0; } }
+
